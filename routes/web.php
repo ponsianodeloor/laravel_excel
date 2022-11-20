@@ -18,6 +18,7 @@ Route::get('/', function () {
 });
 
 Route::get('/users/export/', [\App\Http\Controllers\UserController::class, 'export']);
+Route::get('/users/export_header/', [\App\Http\Controllers\UserController::class, 'exportHeader']);
 
 Auth::routes();
 
